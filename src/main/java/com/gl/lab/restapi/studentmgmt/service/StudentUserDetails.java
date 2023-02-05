@@ -16,6 +16,7 @@ import com.gl.lab.restapi.studentmgmt.entity.User;
 @Service
 public class StudentUserDetails implements UserDetails {
 
+	private static final long serialVersionUID = 1L;
 	private User user;
 
 	public StudentUserDetails() {

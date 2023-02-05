@@ -40,8 +40,9 @@
 		<table class="table table-bordered table-striped">
 			<thead class="thead-dark">
 				<tr>
-					<th>FirstName</th>
-					<th>LastName</th>
+					<th>Student Id</th>
+					<th>First Name</th>
+					<th>Last Name</th>
 					<th>Course</th>
 					<th>Country</th>
 					<th>Action</th>
@@ -51,6 +52,7 @@
 			<tbody>
 				<c:forEach items="${students}" var="student">
 					<tr>
+						<td><c:out value="${student.id}" /></td>
 						<td><c:out value="${student.firstName}" /></td>
 						<td><c:out value="${student.lastName}" /></td>
 						<td><c:out value="${student.course}" /></td>
